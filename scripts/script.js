@@ -72,8 +72,8 @@ function findGreen ()
     const listItems = document.querySelectorAll(".shopping li");
     for (let i = 0 ; i < listItems.length; i++)
     {
-        if(listItems[i]).textContent.includes("green") {
-            listItems[i].classList
+        if(listItems[i].textContent.includes("green")) {
+            listItems[i].classList.add("greenText")
             console.log()
         }
     }
