@@ -40,6 +40,44 @@ let shoppingList = ["cheese", "bread", "green pepper"];
 
 
 populateList(shoppingList); 
+// does not work*
+// -------------------------------------------------------------------
+//defining function
 
+function changeListStyle ()
+    {
+        unorderedListElement.classList.add("squareList");
+        unorderedListElement.classList.remove("circleList");
 
+        // unorderedListElement.classList.replace("circleList, squareList")
+    }
 
+changeListStyle()
+//---------------------------------------------------------------------
+// const shoppingCart = document.querySelector.add() <-- wrong
+
+function updateImage()
+{
+    const imageElement = document.querySelector("#shoppingCart");
+    console.log(imageElement);
+    imageElement.src = "http://cdn-icons-png.flaticon.com/512/263/263142.png";
+    imageElement.width = 100;
+    imageElement.height = 100;
+    imageElement.alt = "shopping cart icon"
+}
+updateImage();
+//---------------------------------------------------------------------
+function findGreen ()
+{
+    const listItems = document.querySelectorAll(".shopping li");
+    for (let i = 0 ; i < listItems.length; i++)
+    {
+        if(listItems[i]).textContent.includes("green") {
+            listItems[i].classList
+            console.log()
+        }
+    }
+}
+
+findGreen();
+//----------------------------------------------------------------------
