@@ -23,9 +23,13 @@
 const unorderedListElement = document.querySelector(".shopping");   // DOM element
 function populateList (list)
 {
+    // // for (let item of list)
+    //     {
+        
+    //     }
     for (let i = 0; i <list.length ; i++)
     {
-        console.log(list[i])  // for each of these items, create and li, append it to unorderedlistElement
+        console.log(list[i]);  // for each of these items, create and li, append it to unorderedlistElement
         const listItemElement = document.createElement("li");
         listItemElement.textContent = list[i];
         unorderedListElement.appendChild(listItemElement);
